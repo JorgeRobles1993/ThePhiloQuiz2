@@ -1,0 +1,119 @@
+body{
+background-color: #d7d7d7;
+background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fire {
+  text-align: center;
+  color: rgb(255, 115, 0);
+  font-size: 5vw;
+  outline: none;
+  text-shadow:
+    0 0 20px crimson,
+    0 0 20px crimson,
+    0 0 10px crimson,
+    5px -10px 10px orange,
+    -5px -10px 10px yellow;
+  animation: 2s amazing infinite alternate linear;
+}
+
+@keyframes amazing {
+  0%   { 
+    text-shadow: 0 10px 20px crimson, 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+  25%   { 
+    text-shadow: 0 10px 20px crimson, 0 0 20px red,
+    0 0 20px orange,
+    -5px -5px 5px yellow,
+    5px -10px 10px yellow,
+    -5px -10px 10px yellow; 
+  }
+  50%   { 
+    text-shadow: 0 10px 20px crimson, 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+  75%   { 
+    text-shadow: 0 10px 20px crimson, 0 0 20px red,
+    0 0 20px orange,
+    -5px -5px 5px yellow,
+    5px -10px 10px yellow,
+    -5px -10px 10px yellow; 
+  }
+  100%   { 
+    text-shadow: 0 10px 20px crimson, 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+}
+
+/* body{
+    background-image: url(../images/temple-ancient-greek-gods-goddess-600nw-2352725929.webp);
+    background-repeat: no-repeat;
+} */
+
+
+
+.socrates:hover {animation: shaking 0.4s infinite;}
+@keyframes shaking {
+   0% {transform: translateX(-10px);}
+   20% {transform: translateX(-5px);}
+   50% {transform: translateX(-5px);}
+   70% {transform: translateX(-5px);}
+   80% {transform: translateX(10px);}
+   90% {transform: translateX(-10px);}
+
+}
+
+
+.choice:hover 
+{
+  background-color: #FF8300;
+  color: black;
+  -webkit-appearance: button; 
+  cursor: pointer;
+}
+
+
+
+.podium {
+  text-align: center;
+}
+.podium div {
+  width:100px;
+  display:inline-block;
+}
+.top {
+  background: yellow;
+  height:100px;
+}
+.left {
+  background: orange;
+  height:75px;
+}
+.right {
+  height:50px;
+  background: grey;
+}

@@ -18,6 +18,11 @@ $user = $preparerequest->fetch();
 if(!empty($user['username'])){
 
     $_SESSION['username'] = $user['username'];
+    $_SESSION['score'] = 0;
+    $_SESSION['idquestions'] = [0];
+    $_SESSION['nbrquestion'] = 1;
+    $_SESSION['id_user'] = $user['id'];
+    
 
     header('location: ../page-quiz.php');
 
@@ -32,6 +37,10 @@ if(!empty($user['username'])){
     ]);
 
     $_SESSION['username'] = $_GET['username'];
+    $_SESSION['score'] = 0;
+    $_SESSION['idquestions'] = [0];
+    $_SESSION['nbrquestion'] = 1;
+    
 }
     
 header('location: ../page-quiz.php');

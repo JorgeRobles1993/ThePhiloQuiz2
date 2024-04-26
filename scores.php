@@ -1,6 +1,6 @@
 <?php
 session_start();
-include './config/debug.php';
+// include './config/debug.php';
 require_once './config/connexion.php';
 include './partials/header.php';
 
